@@ -134,7 +134,7 @@
     margin-bottom: 50px;
 }
 
-.projects__right__tabs a {
+.slider__link__control {
     text-decoration: none;
     color: #FFF;
     font-family: "Nunito Sans";
@@ -142,7 +142,11 @@
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
-    
+}
+
+.slider__link__control--active {
+    color: var(--color-gold);
+    text-decoration: underline;
 }
 
 .projects__right__tabs a:hover {
@@ -200,6 +204,10 @@
     appearance: none;
     background: transparent;
     border: none;
+    cursor: pointer;
+}
+.projects__controls button:hover {
+    cursor: pointer;
 }
 .projects__slider__slide:not(.projects__slider__slide--active) {
     display: none;
